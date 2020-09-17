@@ -5,7 +5,7 @@ import moment from "moment";
 import 'moment/locale/ru';
 import Calendar from './components/Calendar'
 function App() {
-  let currentDate = moment("1995-03-23", "YYYY-MM-DD");
+  let currentDate = moment("2005-03-03", "YYYY-MM-DD");
   currentDate.locale('ru');
 
   return (

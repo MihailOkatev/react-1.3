@@ -126,3 +126,6 @@
   width: 325px;
   margin: 50px auto;
 }
+td.ui-datepicker-other-month {
+  opacity: 0.35;
+}

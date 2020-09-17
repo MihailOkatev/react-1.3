@@ -13,42 +13,60 @@ export default function CalendarField(props) {
         cloneDate.startOf('month');
         while (cloneDate.format('dddd') !== 'Monday') {
             cloneDate.subtract(1,'day');
-            days.push(new Date(cloneDate.format("YYYY MM DD")));
+            days.push(new Date(cloneDate.format("YYYY-MM-DD")));
             days.reverse();
         }
 
     }
     cloneDate = moment(currentDate).startOf("month");
+    console.log(cloneDate.format('DD MM YYYY'));
     const dayInMonth = cloneDate.daysInMonth();
-    for(let i = 0; i < dayInMonth; i++ ) {
+    for(let i = 1; i <= dayInMonth; i++ ) {
+        days.push(new Date(cloneDate.format("YYYY-MM-DD")));
+        cloneDate.add(1,'day');
 
-        days.push(new Date(cloneDate.date(i).format("YYYY MM DD")));
     }
     cloneDate.endOf('month');
-    console.log(cloneDate.format('DD MM YYYY'));
-    while (cloneDate.format('dddd') !== 'Sunday') {
+    while (cloneDate.format('dddd') !== 'Tuesday') {
         cloneDate.add(1,'day');
-        days.push(Number(cloneDate.format("DD")));
+        days.push(new Date(cloneDate.format("YYYY-MM-DD")));
+
     }
     const monnthAsWeeks = arraySlicer(days);
-    console.log(monnthAsWeeks);
     const weekDays = [];
     for(let i = 1; i <= 7; i++) {
         weekDays.push(moment().isoWeekday(i).format('dd'));
     }
     return(
-        <table>
+        <table className= 'ui-datepicker-calendar'>
+            <colgroup>
+            {weekDays.map((day,index) => {
+                if(index === 5 || index === 6) {
+                    return <col className='ui-datepicker-week-end'/>
+                } else {
+                    return <col/>
+                }
+            })}
+            </colgroup>
         <thead>
         <tr>
             {weekDays.map(nameOfDay => <td key={nameOfDay}>{nameOfDay}</td>)}
         </tr>
         </thead>
             <tbody>
-            {monnthAsWeeks.map((week, index) => <tr key={index} className='week'>{week.map((day, index) => {
-          if((index === 5 || index === 6) && day.getFullMonth() !== Number(currentDate.format("MM"))) {
-              return <td key={index} className="ui-datepicker-other-month ui-datepicker-week-end"></td>
-          }      
-            }
+            {monnthAsWeeks.map((week, index) => <tr key={index} className='week'>
+                {week.map(function (day, index) {
+                    console.log(day.getMonth());
+                    console.log(new Date(currentDate.format("YYYY-MM-DD")).getMonth());
+                    if (day.getMonth() !== new Date(currentDate.format("YYYY-MM-DD")).getMonth()) {
+                        return <td key='index' className='ui-datepicker-other-month'>{day.getDate()}</td>
+                    } else if(day.getDay() === 0 || day.getDay() === 6) {
+                        return <td key='index' className='ui-datepicker-week-end'>{day.getDate()}</td>
+                    } else {
+                        return <td key='index'>{day.getDate()}</td>
+
+                    }
+                })}
             </tr>)}
             </tbody>
         </table>
