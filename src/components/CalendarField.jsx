@@ -13,7 +13,7 @@ export default function CalendarField(props) {
         cloneDate.startOf('month');
         while (cloneDate.format('dddd') !== 'Monday') {
             cloneDate.subtract(1,'day');
-            days.push(Number(cloneDate.format("DD")));
+            days.push(new Date(cloneDate.format("YYYY MM DD")));
             days.reverse();
         }
 
@@ -22,7 +22,7 @@ export default function CalendarField(props) {
     const dayInMonth = cloneDate.daysInMonth();
     for(let i = 0; i < dayInMonth; i++ ) {
 
-        days.push(i + 1);
+        days.push(new Date(cloneDate.date(i).format("YYYY MM DD")));
     }
     cloneDate.endOf('month');
     console.log(cloneDate.format('DD MM YYYY'));
@@ -44,7 +44,12 @@ export default function CalendarField(props) {
         </tr>
         </thead>
             <tbody>
-            {monnthAsWeeks.map((week, index) => <tr key={index} className='week'>{week.map((day, index) => <td key={index} className='day'>{day}</td>)}</tr>)}
+            {monnthAsWeeks.map((week, index) => <tr key={index} className='week'>{week.map((day, index) => {
+          if((index === 5 || index === 6) && day.getFullMonth() !== Number(currentDate.format("MM"))) {
+              return <td key={index} className="ui-datepicker-other-month ui-datepicker-week-end"></td>
+          }      
+            }
+            </tr>)}
             </tbody>
         </table>
 )
