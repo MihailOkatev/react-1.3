@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "f9c0d1b0ea1fd856dddb9bb196c090dc",
+    "revision": "87d6262c1127c2f6f8290f7ab7f297d3",
     "url": "/MihailOkatev/react-1.3/index.html"
   },
   {
-    "revision": "3f544879850b2d6c4599",
+    "revision": "899e919b031264b1583c",
     "url": "/MihailOkatev/react-1.3/static/css/main.2010cc3d.chunk.css"
   },
   {
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/MihailOkatev/react-1.3/static/js/2.0dbdcc4e.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "3f544879850b2d6c4599",
-    "url": "/MihailOkatev/react-1.3/static/js/main.c0b19d0c.chunk.js"
+    "revision": "899e919b031264b1583c",
+    "url": "/MihailOkatev/react-1.3/static/js/main.c39c8b6d.chunk.js"
   },
   {
     "revision": "45021218c81f45e885a4",
