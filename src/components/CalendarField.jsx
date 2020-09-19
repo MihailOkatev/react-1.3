@@ -55,15 +55,18 @@ export default function CalendarField(props) {
         </thead>
             <tbody>
             {monnthAsWeeks.map((week, index) => <tr key={index} className='week'>
-                {week.map(function (day, index) {
+                {week.map(function (day) {
+                    console.log(day.getMonth() === Number(currentDate.format("MMD")));
+                    console.log(Number(currentDate.format("MM")));
                     console.log(day.getMonth());
-                    console.log(new Date(currentDate.format("YYYY-MM-DD")).getMonth());
                     if (day.getMonth() !== new Date(currentDate.format("YYYY-MM-DD")).getMonth()) {
-                        return <td key='index' className='ui-datepicker-other-month'>{day.getDate()}</td>
+                        return <td key={day.toString()} className='ui-datepicker-other-month'>{day.getDate()}</td>
                     } else if(day.getDay() === 0 || day.getDay() === 6) {
-                        return <td key='index' className='ui-datepicker-week-end'>{day.getDate()}</td>
+                        return <td key={day.toString()} className='ui-datepicker-week-end'>{day.getDate()}</td>
+                    } else if (day.getDate() === Number(currentDate.format("DD")) && day.getMonth() + 1 === Number(currentDate.format('MM'))) {
+                        return <td key={day.toString()} className='ui-datepicker-today'>{day.getDate()}</td>
                     } else {
-                        return <td key='index'>{day.getDate()}</td>
+                        return <td key={day.toString()}>{day.getDate()}</td>
 
                     }
                 })}
