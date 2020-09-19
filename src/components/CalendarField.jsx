@@ -56,9 +56,6 @@ export default function CalendarField(props) {
             <tbody>
             {monnthAsWeeks.map((week, index) => <tr key={index} className='week'>
                 {week.map(function (day) {
-                    console.log(day.getMonth() === Number(currentDate.format("MMD")));
-                    console.log(Number(currentDate.format("MM")));
-                    console.log(day.getMonth());
                     if (day.getMonth() !== new Date(currentDate.format("YYYY-MM-DD")).getMonth()) {
                         return <td key={day.toString()} className='ui-datepicker-other-month'>{day.getDate()}</td>
                     } else if(day.getDay() === 0 || day.getDay() === 6) {
