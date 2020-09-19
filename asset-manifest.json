@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/MihailOkatev/react-1.3/static/css/main.2010cc3d.chunk.css",
-    "main.js": "/MihailOkatev/react-1.3/static/js/main.c39c8b6d.chunk.js",
-    "main.js.map": "/MihailOkatev/react-1.3/static/js/main.c39c8b6d.chunk.js.map",
+    "main.js": "/MihailOkatev/react-1.3/static/js/main.59568166.chunk.js",
+    "main.js.map": "/MihailOkatev/react-1.3/static/js/main.59568166.chunk.js.map",
     "runtime-main.js": "/MihailOkatev/react-1.3/static/js/runtime-main.cbafafc6.js",
     "runtime-main.js.map": "/MihailOkatev/react-1.3/static/js/runtime-main.cbafafc6.js.map",
     "static/js/2.0dbdcc4e.chunk.js": "/MihailOkatev/react-1.3/static/js/2.0dbdcc4e.chunk.js",
     "static/js/2.0dbdcc4e.chunk.js.map": "/MihailOkatev/react-1.3/static/js/2.0dbdcc4e.chunk.js.map",
     "index.html": "/MihailOkatev/react-1.3/index.html",
-    "precache-manifest.4c6927646f4076f95b56bb91a60f736c.js": "/MihailOkatev/react-1.3/precache-manifest.4c6927646f4076f95b56bb91a60f736c.js",
+    "precache-manifest.adafa93391a199e615c59126c617df8d.js": "/MihailOkatev/react-1.3/precache-manifest.adafa93391a199e615c59126c617df8d.js",
     "service-worker.js": "/MihailOkatev/react-1.3/service-worker.js",
     "static/css/main.2010cc3d.chunk.css.map": "/MihailOkatev/react-1.3/static/css/main.2010cc3d.chunk.css.map",
     "static/js/2.0dbdcc4e.chunk.js.LICENSE.txt": "/MihailOkatev/react-1.3/static/js/2.0dbdcc4e.chunk.js.LICENSE.txt"
@@ -17,6 +17,6 @@
     "static/js/runtime-main.cbafafc6.js",
     "static/js/2.0dbdcc4e.chunk.js",
     "static/css/main.2010cc3d.chunk.css",
-    "static/js/main.c39c8b6d.chunk.js"
+    "static/js/main.59568166.chunk.js"
   ]
 }
