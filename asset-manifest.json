@@ -1,22 +1,22 @@
 {
   "files": {
-    "main.css": "/mihailokatev.github.io/react-1.3/static/css/main.2010cc3d.chunk.css",
-    "main.js": "/mihailokatev.github.io/react-1.3/static/js/main.8a97035d.chunk.js",
-    "main.js.map": "/mihailokatev.github.io/react-1.3/static/js/main.8a97035d.chunk.js.map",
-    "runtime-main.js": "/mihailokatev.github.io/react-1.3/static/js/runtime-main.7eb79a07.js",
-    "runtime-main.js.map": "/mihailokatev.github.io/react-1.3/static/js/runtime-main.7eb79a07.js.map",
-    "static/js/2.0dbdcc4e.chunk.js": "/mihailokatev.github.io/react-1.3/static/js/2.0dbdcc4e.chunk.js",
-    "static/js/2.0dbdcc4e.chunk.js.map": "/mihailokatev.github.io/react-1.3/static/js/2.0dbdcc4e.chunk.js.map",
-    "index.html": "/mihailokatev.github.io/react-1.3/index.html",
-    "precache-manifest.c2064aaa0165a8e919af2fb73a274a91.js": "/mihailokatev.github.io/react-1.3/precache-manifest.c2064aaa0165a8e919af2fb73a274a91.js",
-    "service-worker.js": "/mihailokatev.github.io/react-1.3/service-worker.js",
-    "static/css/main.2010cc3d.chunk.css.map": "/mihailokatev.github.io/react-1.3/static/css/main.2010cc3d.chunk.css.map",
-    "static/js/2.0dbdcc4e.chunk.js.LICENSE.txt": "/mihailokatev.github.io/react-1.3/static/js/2.0dbdcc4e.chunk.js.LICENSE.txt"
+    "main.css": "/react-1.3/static/css/main.2010cc3d.chunk.css",
+    "main.js": "/react-1.3/static/js/main.7a26afb0.chunk.js",
+    "main.js.map": "/react-1.3/static/js/main.7a26afb0.chunk.js.map",
+    "runtime-main.js": "/react-1.3/static/js/runtime-main.12f23fbc.js",
+    "runtime-main.js.map": "/react-1.3/static/js/runtime-main.12f23fbc.js.map",
+    "static/js/2.0dbdcc4e.chunk.js": "/react-1.3/static/js/2.0dbdcc4e.chunk.js",
+    "static/js/2.0dbdcc4e.chunk.js.map": "/react-1.3/static/js/2.0dbdcc4e.chunk.js.map",
+    "index.html": "/react-1.3/index.html",
+    "precache-manifest.b9d1114a48883a7649711c20148aab86.js": "/react-1.3/precache-manifest.b9d1114a48883a7649711c20148aab86.js",
+    "service-worker.js": "/react-1.3/service-worker.js",
+    "static/css/main.2010cc3d.chunk.css.map": "/react-1.3/static/css/main.2010cc3d.chunk.css.map",
+    "static/js/2.0dbdcc4e.chunk.js.LICENSE.txt": "/react-1.3/static/js/2.0dbdcc4e.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
-    "static/js/runtime-main.7eb79a07.js",
+    "static/js/runtime-main.12f23fbc.js",
     "static/js/2.0dbdcc4e.chunk.js",
     "static/css/main.2010cc3d.chunk.css",
-    "static/js/main.8a97035d.chunk.js"
+    "static/js/main.7a26afb0.chunk.js"
   ]
 }
