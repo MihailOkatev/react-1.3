@@ -42,9 +42,9 @@ export default function CalendarField(props) {
             <colgroup>
             {weekDays.map((day,index) => {
                 if(index === 5 || index === 6) {
-                    return <col className='ui-datepicker-week-end'/>
+                    return <col key={index} className='ui-datepicker-week-end'/>
                 } else {
-                    return <col/>
+                    return <col key={index}/>
                 }
             })}
             </colgroup>
